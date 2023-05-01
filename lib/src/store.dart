@@ -1,3 +1,4 @@
+import 'package:demo_object_boxt/src/model/personas.dart';
 import 'package:objectbox/objectbox.dart';
 import 'package:path_provider/path_provider.dart';
 
@@ -15,4 +16,5 @@ class Database {
   }
 
   static Box<User> get userBox => _store.box<User>();
+  static Box<Personas> get personasBox => _store.box<Personas>();
 }
